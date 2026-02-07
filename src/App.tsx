@@ -76,6 +76,7 @@ const App: React.FC = () => {
           <div className="lg:col-span-5">
             <div className="aspect-square rounded-2xl overflow-hidden mb-8 border border-zinc-100 dark:border-zinc-800">
               <img
+                loading="lazy"
                 src={PORTFOLIO_DATA.profileImage}
                 alt={PORTFOLIO_DATA.name}
                 className="w-full h-full object-cover"

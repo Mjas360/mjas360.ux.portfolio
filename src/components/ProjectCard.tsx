@@ -10,6 +10,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     <div className="group flex flex-col space-y-4 overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 shadow-sm transition-all hover:shadow-md">
       <div className="aspect-video overflow-hidden">
         <img
+          loading="lazy"
           src={project.imageUrl}
           alt={project.title}
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
