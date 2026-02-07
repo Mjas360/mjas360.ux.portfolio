@@ -1,4 +1,4 @@
-import { PortfolioData } from "./types";
+import { PortfolioData } from "../types";
 
 /**
  * EDIT THIS FILE TO CUSTOMIZE YOUR PORTFOLIO CONTENT
@@ -62,7 +62,8 @@ including cross-border remittance, transaction monitoring, and merchant dashboar
         "Simplified onboarding and FX workflows, increasing successful transaction completion rates.",
       imageUrl: "/assets/images/kwilax-thumbnail.png",
       liveUrl: "https://kwilax.com/",
-      caseStudyUrl: "https://www.figma.com/design/5hWDcVt5l3t4y1zAHoQ2Pw/KWILAX--Yuan--%3E-Alipay-?node-id=22-467&t=5ElaWIiVgWJqR4E1-1",
+      caseStudyUrl:
+        "https://www.figma.com/design/5hWDcVt5l3t4y1zAHoQ2Pw/KWILAX--Yuan--%3E-Alipay-?node-id=22-467&t=5ElaWIiVgWJqR4E1-1",
       tags: ["B2B", "FinTech", "FX"],
     },
     {
@@ -77,7 +78,8 @@ including cross-border remittance, transaction monitoring, and merchant dashboar
         "Improved vendor adoption and reduced errors during high-pressure environments.",
       imageUrl: "/assets/images/foodcart-thumbnail.png",
       liveUrl: "https://www.foodcart.ng/",
-      caseStudyUrl: "https://www.figma.com/design/HVrqyalNMTsOyDhEQSUz64/FoodCart-Restaurant-Portal?node-id=39-13582&t=xNHYckzdIAeQUyrA-1",
+      caseStudyUrl:
+        "https://www.figma.com/design/HVrqyalNMTsOyDhEQSUz64/FoodCart-Restaurant-Portal?node-id=39-13582&t=xNHYckzdIAeQUyrA-1",
       tags: ["POS", "Vendor", "E-commerce"],
     },
     {
@@ -92,7 +94,8 @@ including cross-border remittance, transaction monitoring, and merchant dashboar
         "Delivered high-fidelity prototypes and platform design, supporting successful launch and early growth.",
       imageUrl: "/assets/images/asoebi-thumbnail.png",
       liveUrl: "https://asoebi.africa/",
-      caseStudyUrl: "https://www.figma.com/design/h0WV7u9C9UMNY5S3xzpRuV/Vendor-Center-asoebi.africa--Revamp-?node-id=1-2&t=coNKtRYqdmfTDVyK-1",
+      caseStudyUrl:
+        "https://www.figma.com/design/h0WV7u9C9UMNY5S3xzpRuV/Vendor-Center-asoebi.africa--Revamp-?node-id=1-2&t=coNKtRYqdmfTDVyK-1",
       tags: ["E-commerce", "Marketplace", "Vendor Tools"],
     },
     {
@@ -123,7 +126,8 @@ including cross-border remittance, transaction monitoring, and merchant dashboar
         "Designed clear workflows for creating deliveries, scheduling pickups, and monitoring runner activity in real time. Improved task visibility and reduced operational friction for business users.",
       imageUrl: "/assets/images/errandify-thumbnail.png",
       liveUrl: "https://errandify.io",
-      caseStudyUrl: "https://www.figma.com/design/N442d6ysFSMrDw5PAVo69F/Errandify?node-id=463-3113&t=XvvXnCKAWrey1poO-1",
+      caseStudyUrl:
+        "https://www.figma.com/design/N442d6ysFSMrDw5PAVo69F/Errandify?node-id=463-3113&t=XvvXnCKAWrey1poO-1",
       tags: ["Logistics", "Delivery", "B2B", "Dashboard", "UI/UX Design"],
     },
   ],

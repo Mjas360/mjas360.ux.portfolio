@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import { PORTFOLIO_DATA } from "../constants";
+import { PORTFOLIO_DATA } from "../src/constants";
 import { ChatMessage } from "../types";
 
 const API_KEY = (import.meta as any).env.VITE_GEMINI_API_KEY;
