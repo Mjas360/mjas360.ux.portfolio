@@ -6,7 +6,7 @@ import { PORTFOLIO_DATA } from "./constants";
 import "./index.css";
 
 const App: React.FC = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     if (darkMode) {
@@ -175,7 +175,7 @@ const App: React.FC = () => {
       {/* Footer */}
       <footer className="py-12 px-6 border-t border-zinc-100 dark:border-zinc-900">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-secondary">
-          <p>© 2024 {PORTFOLIO_DATA.name}. Built with React & Gemini.</p>
+          <p>© 2024 {PORTFOLIO_DATA.name}. Built with Vite (React TypeScript).</p>
           <div className="mt-4 md:mt-0 space-x-6">
             <a href="#" className="hover:text-primary dark:hover:text-white">
               Privacy Policy

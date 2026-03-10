@@ -14,7 +14,7 @@ export interface Project {
 
 export interface Skill {
   name: string;
-  category: 'Design' | 'Tools' | 'Development';
+  category: 'Design' | 'Tools' | 'Development' | string;
 }
 
 export interface PortfolioData {
