@@ -64,6 +64,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <div className="flex space-x-4 pt-2">
           {project.liveUrl && (
             <a
+              target="_blank"
               href={project.liveUrl}
               className="text-sm font-medium text-primary dark:text-white underline underline-offset-4 hover:opacity-70 transition-opacity"
             >
@@ -73,6 +74,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           {project.caseStudyUrl && (
             <a
               href={project.caseStudyUrl}
+              target="_blank"
               className="text-sm font-medium text-primary dark:text-white underline underline-offset-4 hover:opacity-70 transition-opacity"
             >
               Case Study Figma
