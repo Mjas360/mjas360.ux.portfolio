@@ -19,7 +19,7 @@ With a hybrid background in product design and engineering, I bridge the gap bet
 I specialize in building reusable component architectures, implementing design systems, and delivering responsive interfaces that support real-world financial operations across multiple markets.
   `,
 
-  profileImage: "/assets/images/mjas-profile-image.jpeg",
+  profileImage: "/assets/images/mjas-profile-image.png",
 
   email: "amosasulyman360@gmail.com",
   linkedin: "https://www.linkedin.com/in/amosa-sulyman-baa132245",
@@ -98,7 +98,7 @@ I specialize in building reusable component architectures, implementing design s
       problem:
         "Existing POS workflows were slow and error-prone during peak business hours, leading to operational delays and user frustration.",
 
-      role: "Frontend Engineer | Product Designer",
+      role: "Product Designer",
 
       outcome:
         "Developed optimized vendor dashboards and POS interfaces focused on speed, clarity, and reliability in real-world usage environments. Reduced operational friction and improved usability during high-volume transactions.",
@@ -119,7 +119,7 @@ I specialize in building reusable component architectures, implementing design s
       problem:
         "The early-stage marketplace required clear product workflows and scalable UI structures for vendor management, product listings, and customer transactions.",
 
-      role: "Frontend Engineer | Product Designer",
+      role: "Product Designer",
 
       outcome:
         "Designed and implemented customer, vendor, and admin interfaces that structured the marketplace experience. Developed scalable UI flows supporting vendor onboarding, product management, and checkout processes.",
