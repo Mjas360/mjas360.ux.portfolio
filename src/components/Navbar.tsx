@@ -1,5 +1,6 @@
 
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
+import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import ThemeToggle from './ThemeToggle';
 import { PORTFOLIO_DATA } from '../constants';
 
@@ -10,6 +11,8 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const toggleRef = useRef<HTMLButtonElement>(null);
+  const reduceMotion = useReducedMotion();
 
   const navLinks = [
     { name: 'Projects', href: '#projects' },
@@ -18,7 +21,12 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md border-b border-zinc-100 dark:border-zinc-900">
+    <nav aria-label="Main navigation" onKeyDown={(event) => {
+      if (event.key === "Escape" && isOpen) {
+        setIsOpen(false);
+        toggleRef.current?.focus();
+      }
+    }} className="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md border-b border-zinc-100 dark:border-zinc-900">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <a href="#" className="text-xl font-bold tracking-tight">
           {PORTFOLIO_DATA.name.split(' ')[0]}<span className="text-secondary">.</span>
@@ -41,7 +49,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
         {/* Mobile Toggle */}
         <div className="flex items-center md:hidden space-x-4">
           <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
-          <button onClick={() => setIsOpen(!isOpen)} className="p-2">
+          <button ref={toggleRef} type="button" onClick={() => setIsOpen(!isOpen)} className="p-2" aria-label={isOpen ? "Close navigation" : "Open navigation"} aria-expanded={isOpen} aria-controls="mobile-navigation">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               {isOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -54,9 +62,10 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
       </div>
 
       {/* Mobile Menu */}
+      <AnimatePresence initial={false}>
       {isOpen && (
-        <div className="md:hidden bg-white dark:bg-zinc-950 px-6 pb-8 border-b border-zinc-100 dark:border-zinc-900 animate-in fade-in slide-in-from-top-4">
-          <div className="flex flex-col space-y-4">
+        <motion.div id="mobile-navigation" initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: reduceMotion ? 0 : 0.2 }} className="md:hidden overflow-hidden bg-white dark:bg-zinc-950 border-b border-zinc-100 dark:border-zinc-900">
+          <div className="flex flex-col space-y-4 px-6 pb-8">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -68,8 +77,9 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
               </a>
             ))}
           </div>
-        </div>
+        </motion.div>
       )}
+      </AnimatePresence>
     </nav>
   );
 };

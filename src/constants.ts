@@ -5,9 +5,9 @@ import { PortfolioData } from "../types";
  */
 export const PORTFOLIO_DATA: PortfolioData = {
   name: "Sulyman Amosa",
-  title: "Frontend Engineer | Product Designer",
+  title: "Product Designer & Frontend Engineer",
   shortIntro:
-    "Frontend Engineer specializing in fintech and SaaS platforms, building scalable financial interfaces with React and TypeScript.",
+    "I design digital product experiences and engineer them into production. Working across commerce, fintech and SaaS with React and TypeScript.",
 
   longBio: `
 I am a Frontend Engineer with 4+ years of experience building fintech and SaaS platforms using React and TypeScript.
@@ -48,8 +48,68 @@ I specialize in building reusable component architectures, implementing design s
 
   projects: [
     {
+      featured: true,
+      id: "4",
+      title: "Asoebi Africa",
+      shortDescription:
+        "A marketplace connecting African fashion vendors and customers, from discovery to checkout.",
+
+      problem:
+        "The early-stage marketplace required clear product workflows and scalable UI structures for vendor management, product listings, and customer transactions.",
+
+      role: "Product Designer & Frontend Engineer",
+
+      outcome:
+        "Designed and implemented customer, vendor, and admin interfaces that structured the marketplace experience. Developed scalable UI flows supporting vendor onboarding, product management, and checkout processes.",
+
+      imageUrl: "/assets/images/asoebi-thumbnail.png",
+      liveUrl: "https://asoebi.africa/",
+      caseStudyUrl:
+        "https://www.figma.com/design/h0WV7u9C9UMNY5S3xzpRuV/Vendor-Center-asoebi.africa--Revamp-?node-id=1-2&t=coNKtRYqdmfTDVyK-1",
+      tags: ["Commerce", "Marketplace", "UI/UX", "Design System", "Frontend"],
+    },
+
+    {
+      featured: true,
+      id: "5",
+      title: "MooniePay",
+      shortDescription:
+        "Modern payment aggregator platform helping African merchants collect payments and manage multi-currency wallets.",
+
+      problem:
+        "Businesses needed a unified platform to manage payment collection, KYC, transaction tracking, and payouts across multiple currencies.",
+
+      role: "Frontend Engineer | Product Designer",
+
+      outcome:
+        "Designed and built merchant-facing dashboards and payment workflows for dynamic payment links, wallet management, reporting, and KYC processes. Simplified complex multi-currency payment operations into clear, scalable UI structures.",
+
+      imageUrl: "/assets/images/mooniepay-thumbnail.png",
+      liveUrl: "https://mooniepay-merchant-fe-4gfk.onrender.com/",
+      caseStudyUrl:
+        "https://www.figma.com/design/GYvDnCsE3xIfK7synYvNc4/Moonie---Public-Pages?node-id=209-1014&t=dJCjfOKueU9uiLrL-1",
+      tags: ["Fintech", "0→1 Product", "Product Design", "Frontend"],
+    },
+
+    {
+      id: "sendnex",
+      featured: true,
+      title: "SendNex",
+      shortDescription:
+        "A remittance experience for sending money from the US and Canada to Africa.",
+      problem:
+        "Making cross-border transfers easy to understand, from currency selection to delivery method.",
+      role: "Frontend Engineer",
+      outcome: "Frontend engineering for the SendNex remittance experience.",
+      imageUrl: "/assets/images/sendnex-thumbnail.png",
+      liveUrl: "https://sendnex.app",
+      tags: ["Remittance", "Payments", "Frontend Engineering"],
+    },
+
+    {
+      featured: true,
       id: "1",
-      title: "SUKATE & BEZEBOH Digital Banking",
+      title: "Sukate & Bezeboh",
       shortDescription:
         "Fintech web applications and admin platforms for transaction monitoring, remittance operations, and compliance workflows.",
 
@@ -65,12 +125,13 @@ I specialize in building reusable component architectures, implementing design s
       liveUrl: "https://sbremit.com/",
       caseStudyUrl:
         "https://www.figma.com/design/CgRWrugM4rdXJGY6bF7dxe/SBremit-App-Revamp?node-id=1213-2675&t=5jAUt8oWVw28ceVQ-1",
-      tags: ["FinTech", "Admin Dashboard", "Remittance"],
+      tags: ["Banking", "Enterprise", "Frontend"],
     },
 
     {
+      featured: true,
       id: "2",
-      title: "KWILAX Cross-Border Payments",
+      title: "KwilaX",
       shortDescription:
         "B2B platform enabling Nigerian businesses to purchase Chinese Yuan (CNY) and execute international payments.",
 
@@ -86,12 +147,12 @@ I specialize in building reusable component architectures, implementing design s
       liveUrl: "https://kwilax.com/",
       caseStudyUrl:
         "https://www.figma.com/design/5hWDcVt5l3t4y1zAHoQ2Pw/KWILAX--Yuan--%3E-Alipay-?node-id=22-467&t=5ElaWIiVgWJqR4E1-1",
-      tags: ["B2B", "FinTech", "FX"],
+      tags: ["FX", "Payments", "Product Design"],
     },
 
     {
       id: "3",
-      title: "FOODCART POS & Vendor Ecosystem",
+      title: "Foodcart",
       shortDescription:
         "POS and vendor management platform designed for high-volume food businesses and operational teams.",
 
@@ -111,50 +172,8 @@ I specialize in building reusable component architectures, implementing design s
     },
 
     {
-      id: "4",
-      title: "ASOEBI AFRICA Marketplace",
-      shortDescription:
-        "Two-sided marketplace connecting fashion vendors with customers across Africa.",
-
-      problem:
-        "The early-stage marketplace required clear product workflows and scalable UI structures for vendor management, product listings, and customer transactions.",
-
-      role: "Product Designer",
-
-      outcome:
-        "Designed and implemented customer, vendor, and admin interfaces that structured the marketplace experience. Developed scalable UI flows supporting vendor onboarding, product management, and checkout processes.",
-
-      imageUrl: "/assets/images/asoebi-thumbnail.png",
-      liveUrl: "https://asoebi.africa/",
-      caseStudyUrl:
-        "https://www.figma.com/design/h0WV7u9C9UMNY5S3xzpRuV/Vendor-Center-asoebi.africa--Revamp-?node-id=1-2&t=coNKtRYqdmfTDVyK-1",
-      tags: ["E-commerce", "Marketplace", "Vendor Tools"],
-    },
-
-    {
-      id: "5",
-      title: "MooniePay",
-      shortDescription:
-        "Modern payment aggregator platform helping African merchants collect payments and manage multi-currency wallets.",
-
-      problem:
-        "Businesses needed a unified platform to manage payment collection, KYC, transaction tracking, and payouts across multiple currencies.",
-
-      role: "Frontend Engineer | Product Designer",
-
-      outcome:
-        "Designed and built merchant-facing dashboards and payment workflows for dynamic payment links, wallet management, reporting, and KYC processes. Simplified complex multi-currency payment operations into clear, scalable UI structures.",
-
-      imageUrl: "/assets/images/mooniepay-thumbnail.png",
-      liveUrl: "https://mooniepay-merchant-fe-4gfk.onrender.com/",
-      caseStudyUrl:
-        "https://www.figma.com/design/GYvDnCsE3xIfK7synYvNc4/Moonie---Public-Pages?node-id=209-1014&t=dJCjfOKueU9uiLrL-1",
-      tags: ["FinTech", "Payments", "Dashboard", "Africa"],
-    },
-
-    {
       id: "6",
-      title: "Errandify – Business Delivery & Logistics Platform",
+      title: "Errandify",
       shortDescription:
         "Business platform helping companies manage deliveries, pickups, and logistics operations.",
 

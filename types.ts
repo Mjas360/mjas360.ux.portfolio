@@ -1,6 +1,7 @@
 
 export interface Project {
   id: string;
+  featured?: boolean;
   title: string;
   shortDescription: string;
   problem: string;
